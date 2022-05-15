@@ -16,7 +16,8 @@ h1{
 }
 
 a{
-   text-decoration: none; 
+   text-decoration: none;
+   color: inherit; 
 }
 
 /* ================= *\
@@ -84,4 +85,119 @@ a{
 .header-options{
     display: flex;
     gap: 24px;
+}
+
+/* ================ *\
+     S E C T I O N
+\* ================ */
+
+.section{
+
+}
+
+    .section-content{
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-content-courses{
+        display: flex;
+        gap: 80px;
+    }
+
+    .section-courses-left{
+        width: 66.6666666%;
+    }
+    .section-courses-right{
+        width: 33.3333333%;
+    }
+
+/* ================ *\
+     COURSES LIST
+\* ================ */
+
+.courses-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.courses-list-item{
+    width: calc(50% - 20px);
+}
+
+
+/* ================ *\
+     COURSE PREVIEW
+\* ================ */
+
+.course-preview{
+    background-color: #fff;
+    filter: drop-shadow(0px 18.0585px 18.0585px rgba(0, 0, 0, 0.05));
+    border-radius: 9.02926px;
+    padding-bottom: 20px;
+}
+
+.course-preview-tag{
+    background-color: #545BE8;
+    display: inline-block;
+    padding: 10px 12px;
+    color: #fff;
+    font-size: 16.25px;
+    font-weight: 700;
+    position: absolute;
+    top: 21.62px;
+    left: 0;
+}
+
+.course-preview-price{
+    font-size: 21.67px;
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    bottom: 13.92px;
+    right: 14.23px;
+}
+
+.course-preview-img{
+    display: block;
+    width: 100%;
+}
+
+.course-preview-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+    margin-top: 19.82px;
+}
+
+.course-preview-title{
+    font-size: 21.67px;
+    color: #141E32;
+    margin: 0;
+}
+
+.course-preview-views{
+    font-size: 12.64px;
+    color: #545BE8;
+}
+
+.course-preview-features{
+    list-style: none;
+    padding: 0 14px;
+    margin: 0;
+    display: flex;
+    gap: 14px;
+    color: #969696;
+    font-size: 16.25px;
+}
+
+.course-preview-thumbnail{
+    position: relative;
 }
