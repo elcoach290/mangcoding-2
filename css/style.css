@@ -182,8 +182,12 @@ a{
     font-weight: 700;
     color: #fff;
     position: absolute;
-    bottom: 13.92px;
-    right: 14.23px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 14px;
+    text-align: right;
+    background: linear-gradient(transparent, #000);
 }
 
 .course-preview-img{
@@ -282,3 +286,72 @@ a{
         padding: 0;
         color: #F1CC4A;
     }
+
+
+/* ==================== *\
+      F O O T E R
+\* ==================== */
+
+.footer{
+    background-color: #393E46;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    gap: 149px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    padding: 100px 0;
+}
+
+.footer-left{
+
+}
+
+.footer-right{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 76px;
+}
+
+.footer-title{
+
+}
+
+.footer-socials{
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-socials-link{
+    display: inline-block;
+    opacity: 0.85;
+    transform: scale(0.95);
+    transition: transform 300ms, opacity 300ms;
+}
+.footer-socials-link:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.footer-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link{
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 11px;
+}
+.footer-link:hover{
+    color: #545BE8;
+}
