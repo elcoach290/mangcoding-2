@@ -1,3 +1,8 @@
+:root{
+    --primary-color: #545BE8;
+    --secomdary-color: #000;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -29,7 +34,7 @@ a{
     padding: 10px 49px;
     color: #fff;
     border: none;
-    background-color: #545BE8;
+    background-color: var(--primary-color);
     border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
@@ -42,8 +47,8 @@ a{
     }
 
 .cta-outline{
-    border: solid 1px #545BE8;
-    color: #545BE8;
+    border: solid 1px var(--primary-color);
+    color: var(--primary-color);
     background-color: transparent;
 }
 
@@ -107,7 +112,7 @@ a{
 
     .section-subtitle{
         font-family: Inter, sans-serif;
-        color: #545BE8;
+        color: var(--primary-color);
         font-size: 18px;
         font-weight: 400;
     }
@@ -121,6 +126,20 @@ a{
     .section-content-courses{
         display: flex;
         gap: 80px;
+    }
+
+
+    .section-content-features{
+        display: flex;
+        gap: 24px;
+    }
+
+    .section-content-features-left{
+        width: 25%;
+    }
+
+    .section-content-features-right{
+        width: 75%;
     }
 
     .section-courses-left{
@@ -164,7 +183,7 @@ a{
 }
 
 .course-preview-tag{
-    background-color: #545BE8;
+    background-color: var(--primary-color);
     display: inline-block;
     padding: 10px 12px;
     color: #fff;
@@ -217,7 +236,7 @@ a{
 
 .course-preview-views{
     font-size: 12.64px;
-    color: #545BE8;
+    color: var(--primary-color);
 }
 
 .course-preview-features{
@@ -287,6 +306,62 @@ a{
         color: #F1CC4A;
     }
 
+/* ==================== *\
+       FEATURES-LIST
+\* ==================== */
+
+.features-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 -15px;
+    gap: 40px;
+    color: #DDDDDD;
+}
+
+    .features-list-item{
+        background-color: var(--primary-color);
+        padding: 40px 24px 40px 16px;
+        border-radius: 10px;
+        transition: background-color 300ms;
+        margin: 0 15px;
+    }
+
+    .features-list-item:hover{
+        background-color: var(--secomdary-color);
+    }
+
+    .features-list-title{
+        color: #fff;
+    }
+
+    .features-list-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+/* ==================== *\
+      C A R R U S E L
+\* ==================== */
+
+.carrusel{
+    margin: 40px -15px;
+}
+
+    .carrusel-item{
+        margin: 0 15px;
+    }
+
+    .slick-prev::before, .slick-next::before{
+        color: var(--primary-color);
+    }
+
+
 
 /* ==================== *\
       F O O T E R
@@ -353,5 +428,5 @@ a{
     margin-bottom: 11px;
 }
 .footer-link:hover{
-    color: #545BE8;
+    color: var(--primary-color);
 }
